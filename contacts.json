@@ -1,0 +1,19 @@
+{
+  "tenants": {
+    "unit_2a": { "name": "Maria Santos", "phone": "555-0201" },
+    "unit_2b": { "name": "James Chen", "phone": "555-0202" },
+    "unit_3a": { "name": "Sarah Johnson", "phone": "555-0301" },
+    "unit_3b": { "name": "Mike Williams", "phone": "555-0302" },
+    "unit_4a": { "name": "Lisa Park", "phone": "555-0401" },
+    "unit_4b": { "name": "Tom Anderson", "phone": "555-0402" },
+    "unit_5a": { "name": "Rachel Green", "phone": "555-0501" },
+    "unit_5b": { "name": "David Kim", "phone": "555-0502" }
+  },
+  "owner": { "name": "Robert Hughes", "phone": "555-0100" },
+  "maintenance": { "name": "Joe's Maintenance", "phone": "555-0900" },
+  "plumber": { "name": "Quick Fix Plumbing", "phone": "555-0901" },
+  "electrician": { "name": "Bright Spark Electric", "phone": "555-0902" },
+  "locksmith": { "name": "KeyMaster Locks", "phone": "555-0903" },
+  "pest_control": { "name": "BugFree Exterminators", "phone": "555-0904" },
+  "emergency": { "name": "Emergency Services", "phone": "911" }
+}

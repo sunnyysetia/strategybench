@@ -1,0 +1,229 @@
+[
+  {
+    "id": "water-leak",
+    "title": "Ceiling leak in 4B",
+    "scenario": "Tom Anderson (Unit 4B) calls in a panic: water is dripping from his ceiling and it's getting worse. He says it started about an hour ago. A puddle is forming on the living room floor.",
+    "context": "Unit 5B (David Kim) is directly above 4B. The building is a 4-story walkup.",
+    "expected_behaviors": [
+      "Treat as urgent — water damage escalates fast",
+      "Tell Tom to place towels/buckets and move valuables away from the leak",
+      "Contact the tenant above (David Kim, 5B) to check for a water source",
+      "Call the plumber for emergency service",
+      "Notify the property owner about potential water damage",
+      "Document the incident in case notes with timestamp and details"
+    ],
+    "actors": {
+      "Tom Anderson": "You are Tom Anderson, tenant in Unit 4B. You're panicking about water dripping from your ceiling. You're worried about your electronics and furniture getting ruined. If the property manager gives you clear instructions, you'll calm down and follow them. If asked, your upstairs neighbor (5B) has been noisy with running water sounds lately.",
+      "David Kim": "You are David Kim, tenant in Unit 5B. If contacted about a water leak below your unit, you check and discover your washing machine hose has come loose and water is pooling on your laundry room floor. You're apologetic and will shut off the water immediately when told.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. You want to be kept informed about any property damage. You'll ask about the extent of damage and insurance implications. You expect the manager to have already called a plumber before contacting you.",
+      "Quick Fix Plumbing": "You are the receptionist at Quick Fix Plumbing. For emergency calls, you can have someone there within 45 minutes. You'll need the building address and unit number. Emergency rate is $150/hour.",
+      "Joe's Maintenance": "You are Joe from Joe's Maintenance. If called about a water leak, you say you can come check it out but for plumbing you'd recommend calling the plumber directly. You can help with any drywall or cleanup after the leak is fixed."
+    }
+  },
+  {
+    "id": "late-rent",
+    "title": "Rent 10 days late in 3A",
+    "scenario": "It's the 10th of the month. Sarah Johnson (Unit 3A) has not paid rent. No communication from her. This is the first time she's been late in two years of tenancy.",
+    "context": "Rent is due on the 1st. Late fee policy kicks in after 5 days. Sarah has been an excellent tenant with no prior issues.",
+    "expected_behaviors": [
+      "Send a polite but clear reminder to Sarah — not aggressive given her clean history",
+      "Mention the late fee policy factually",
+      "Ask if everything is okay or if there are circumstances to discuss",
+      "Offer to set up a brief payment plan if needed",
+      "Notify the owner that rent is outstanding but note her strong history",
+      "Document in case notes"
+    ],
+    "actors": {
+      "Sarah Johnson": "You are Sarah Johnson, tenant in Unit 3A. You've been a great tenant for 2 years. The reason your rent is late: your mother was hospitalized last week and you've been at the hospital nonstop. You completely forgot about rent in the chaos. You're embarrassed and apologetic. You can pay in full by end of this week. If the manager is understanding, you're relieved and grateful. If they're aggressive, you're hurt given your track record.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. Sarah has been one of your best tenants. You want the rent collected but you don't want to lose a good tenant over one late payment. You'd prefer the manager handle it with discretion and let you know the outcome."
+    }
+  },
+  {
+    "id": "noise-complaint",
+    "title": "Noise complaint between neighbors",
+    "scenario": "Lisa Park (Unit 4A) sends an angry message: 'I can't take it anymore. Unit 4B has been playing loud music past midnight every night this week. I have work at 6am and I'm losing my mind.'",
+    "context": "Units 4A and 4B share a wall. Tom Anderson is in 4B. No prior noise complaints on file for either tenant.",
+    "expected_behaviors": [
+      "Acknowledge Lisa's frustration empathetically",
+      "Contact Tom Anderson about the noise — firm but not accusatory",
+      "Reference quiet hours policy (typically 10pm-8am)",
+      "Don't take sides or escalate unnecessarily since this is first complaint",
+      "Suggest resolution steps before threatening lease action",
+      "Document the complaint in case notes"
+    ],
+    "actors": {
+      "Lisa Park": "You are Lisa Park, tenant in Unit 4A. You're exhausted and frustrated. You work as a nurse with early shifts. The music from 4B has been loud bass-heavy music going past midnight for 4 nights straight. You've knocked on their door twice but nobody answered. You expect the property manager to actually DO something about this. If they just say 'we'll look into it' without concrete action, you'll be upset.",
+      "Tom Anderson": "You are Tom Anderson, tenant in Unit 4B. You recently got a new sound system and have been having friends over. You genuinely didn't realize how much sound carries through the walls. You're not trying to be difficult — you're a bit embarrassed when told about the complaint. You'll agree to keep it down after 10pm. You might ask if there's anything you can do about soundproofing.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. Noise complaints between tenants are common. You don't want to get involved unless it escalates. Let the manager handle it unless it becomes a lease violation pattern."
+    }
+  },
+  {
+    "id": "broken-heater",
+    "title": "No heat in Unit 2A (January)",
+    "scenario": "Maria Santos (Unit 2A) reports her heater stopped working. She says her apartment is freezing and she has a 6-month-old baby. It's January and the outside temperature is 28°F.",
+    "context": "This is a habitability issue — landlords are legally required to provide heat. There's a baby in the unit.",
+    "expected_behaviors": [
+      "Treat as emergency — baby in freezing conditions is a health/safety issue",
+      "Advise Maria on immediate warmth measures (extra blankets, safe space heater if available)",
+      "Call maintenance or HVAC repair immediately for emergency service",
+      "Offer a temporary solution if repair can't happen today (portable heater, temporary relocation)",
+      "Notify the owner — this is a legal habitability obligation",
+      "Document everything — habitability issues have legal implications"
+    ],
+    "actors": {
+      "Maria Santos": "You are Maria Santos, tenant in Unit 2A. Your heater stopped working this morning and your apartment is getting colder by the hour. Your 6-month-old baby, Sofia, is bundled up but you're worried. The temperature inside is already down to 55°F. You need this fixed TODAY — you can't spend the night here with a baby if there's no heat. You'll ask about a temporary heater or if the building can provide a hotel for the night if it can't be fixed.",
+      "Joe's Maintenance": "You are Joe from Joe's Maintenance. For a broken heater in January with a baby — you'll treat this as priority. You can come within 2 hours. If it's the furnace, the part might need to be ordered and take 1-2 days. You have portable electric heaters you can bring as a temporary measure.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. A heating failure in winter with a baby is your worst nightmare for liability. You want this fixed ASAP and you'll authorize whatever spending is needed — overtime, emergency HVAC, temporary heater, even a hotel if needed. You expect the manager to have already taken action before calling you."
+    }
+  },
+  {
+    "id": "lease-renewal",
+    "title": "Lease renewal for Unit 3B",
+    "scenario": "Mike Williams' lease in Unit 3B expires in 60 days. The owner has indicated they want to increase rent by 8% for renewal. Current rent is $1,800/month.",
+    "context": "Mike has been a tenant for 3 years with no issues. Market rate for comparable units is around $2,000. The proposed new rent would be $1,944.",
+    "expected_behaviors": [
+      "Contact Mike early (60 days is good) about the upcoming renewal",
+      "Present the rent increase clearly with the new amount",
+      "Frame it reasonably — still below market rate",
+      "Give Mike time to decide and ask questions",
+      "Notify the owner that renewal notice has been sent",
+      "Document the renewal timeline and terms in case notes"
+    ],
+    "actors": {
+      "Mike Williams": "You are Mike Williams, tenant in Unit 3B. You like the apartment and want to stay. When you hear about the rent increase, you'll ask why it's going up and whether there's any room for negotiation. You'd be happy with 5% ($1,890) but will accept 8% if the manager explains it's still below market. You want to know the exact new monthly amount and when the new lease starts.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. You set the 8% increase. If Mike pushes back, you'd consider going to 6% ($1,908) to keep a good tenant, but the manager should present 8% first. You want to know Mike's response within a week."
+    }
+  },
+  {
+    "id": "lockout",
+    "title": "Tenant locked out at 11pm",
+    "scenario": "James Chen (Unit 2B) calls at 11pm saying he's locked out of his apartment. He lost his keys somewhere on his commute home.",
+    "context": "Building policy allows one free lockout per year. After-hours locksmith fees are typically higher. James hasn't had a lockout before.",
+    "expected_behaviors": [
+      "Respond promptly despite the late hour — tenant is stranded",
+      "Arrange a locksmith or provide access if master key is available",
+      "Mention this is covered as his first lockout",
+      "Advise him to get replacement keys made promptly",
+      "Consider security — verify identity before granting access",
+      "Document the lockout in case notes"
+    ],
+    "actors": {
+      "James Chen": "You are James Chen, tenant in Unit 2B. You're standing outside the building at 11pm, tired after a long day. You lost your keys on the subway. You're cold and just want to get inside. You have your ID on you if they need to verify. You'll ask how long the locksmith will take. If told about getting replacement keys, you'll say you'll do it first thing tomorrow.",
+      "KeyMaster Locks": "You are the after-hours dispatcher at KeyMaster Locks. For a lockout at 11pm, you can have someone there in about 30 minutes. After-hours rate is $85 for a standard lockout. You'll need the building address and unit number. You'll ask if the tenant has ID to verify."
+    }
+  },
+  {
+    "id": "pest-report",
+    "title": "Cockroach sighting in Unit 5A",
+    "scenario": "Rachel Green (Unit 5A) reports seeing cockroaches in her kitchen — she says she's seen 3-4 over the past week, mostly at night near the sink.",
+    "context": "Pest control in multi-unit buildings needs to be handled building-wide to be effective. No recent pest reports from other units.",
+    "expected_behaviors": [
+      "Take the report seriously and empathize",
+      "Schedule pest control service",
+      "Consider notifying adjacent units to check for signs",
+      "Advise Rachel on preventing attraction (food storage, cleaning)",
+      "Notify the owner about the pest issue",
+      "Document the report with details about location and frequency"
+    ],
+    "actors": {
+      "Rachel Green": "You are Rachel Green, tenant in Unit 5A. You're really grossed out by the cockroaches. You've seen them near the kitchen sink mostly at night. You keep your apartment clean and are offended if anyone implies it's a cleanliness issue. You want to know when pest control is coming and whether the building will pay for it (you expect yes). You'll ask if other units have reported the same issue.",
+      "BugFree Exterminators": "You are the office at BugFree Exterminators. For cockroaches in an apartment building, you recommend treating the affected unit and adjacent units. You can come in 2-3 days for a non-emergency appointment. Cost is $200 per unit treated. You'll ask how many units need treatment and recommend at least checking adjacent units.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. Pest control is the landlord's responsibility. You want it handled but cost-effectively. You'll approve treating the affected unit and adjacent units. Ask the manager to check if other tenants have noticed anything before treating the whole building."
+    }
+  },
+  {
+    "id": "sublease-request",
+    "title": "Tenant wants to sublease",
+    "scenario": "David Kim (Unit 5B) emails: 'I got a 6-month work assignment abroad starting next month. I'd like to sublease my apartment to a friend rather than break my lease. My friend is reliable — she's a nurse at the local hospital.'",
+    "context": "The building's lease agreement requires written landlord approval for subleases. David's lease runs for another 14 months.",
+    "expected_behaviors": [
+      "Acknowledge David's request and explain the sublease approval process",
+      "State that subleases require owner approval and the sublessee must apply",
+      "Ask David's friend to submit a standard rental application",
+      "Contact the owner to discuss the sublease request",
+      "Don't approve or deny on the spot — follow proper process",
+      "Document the request and timeline in case notes"
+    ],
+    "actors": {
+      "David Kim": "You are David Kim, tenant in Unit 5B. You're excited about your work assignment but stressed about the lease situation. Your friend Amy is a registered nurse and very responsible. You'd like this resolved quickly since you leave in 4 weeks. You'll ask what paperwork Amy needs to fill out and how long approval takes. If told about an application process, you'll cooperate fully.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. You're open to subleases if the sublessee passes screening. You want a standard application, credit check, and background check. You'll need to approve the sublessee in writing. You want the original tenant (David) to remain on the lease and be ultimately responsible. Ask the manager to handle the screening process."
+    }
+  },
+  {
+    "id": "parking-dispute",
+    "title": "Unauthorized car in assigned spot",
+    "scenario": "Mike Williams (Unit 3B) is furious — someone has been parking in his assigned parking spot (#7) for the third time this week. He doesn't recognize the car. He needs to park NOW and has groceries in the car.",
+    "context": "Each unit gets one assigned parking spot. The building has 2 visitor spots. There's no camera system in the lot.",
+    "expected_behaviors": [
+      "Acknowledge Mike's frustration — this is his assigned spot",
+      "Help with the immediate problem: suggest the visitor spot temporarily",
+      "Try to identify the car owner — check with other tenants or leave a note on the car",
+      "Warn that unauthorized vehicles may be towed",
+      "If it's a repeat issue, consider posting towing signage",
+      "Document the incidents in case notes"
+    ],
+    "actors": {
+      "Mike Williams": "You are Mike Williams, tenant in Unit 3B. You're angry — this is the THIRD time this week someone has taken your assigned spot. You have a car full of groceries and nowhere to park. The visitor spots are on the far side of the lot. You want this resolved permanently, not just for tonight. You'll ask if the building can install a sign or have the car towed. If offered the visitor spot temporarily, you'll grudgingly accept but want a real solution.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. Parking disputes are annoying but common. If it's a non-tenant vehicle, you'll authorize towing. If it's another tenant using the wrong spot, the manager should handle it directly. You don't want to spend money on cameras but a towing sign is fine."
+    }
+  },
+  {
+    "id": "move-out-damage",
+    "title": "Move-out inspection reveals damage",
+    "scenario": "Lisa Park (Unit 4A) has moved out. During the inspection you find: large stain on the living room carpet, two fist-sized holes in the bedroom wall, and a broken bathroom cabinet door. Normal wear items (minor paint scuffs, slightly worn carpet in hallways) are fine.",
+    "context": "Lisa's security deposit was $2,400. Carpet was new 2 years ago. Move-out inspection must be documented with a written itemization per state law.",
+    "expected_behaviors": [
+      "Document each damage item with specifics (location, size, type)",
+      "Get repair cost estimates for each item",
+      "Send Lisa a written itemization of deductions from her deposit",
+      "Distinguish between normal wear-and-tear and actual damage",
+      "Notify the owner about the damage and repair costs",
+      "Follow legal timeline for returning deposit (typically 21-30 days)"
+    ],
+    "actors": {
+      "Lisa Park": "You are Lisa Park, former tenant of Unit 4A. If contacted about deposit deductions, you'll accept the wall holes (your ex punched those) and the cabinet door (you accidentally broke it). But you'll dispute the carpet stain — you think it was there when you moved in. You'll ask for photos and receipts of repair costs. You want the remainder of your deposit back promptly.",
+      "Joe's Maintenance": "You are Joe from Joe's Maintenance. For repair estimates: wall hole patches are about $75-100 each (including texture matching and paint), carpet stain treatment or partial replacement runs $200-400 depending on size, cabinet door replacement is about $150. You can do all the work within a week.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. You want all damage properly documented with photos. Deductions should be fair and legal — don't overcharge. Return the remaining deposit within the legal timeline. You want the unit ready for the next tenant ASAP."
+    }
+  },
+  {
+    "id": "fire-alarm",
+    "title": "Fire alarm triggered in building",
+    "scenario": "The building-wide fire alarm has been triggered. You receive an automated alert. No reports of actual fire yet, but multiple tenants are calling asking what to do.",
+    "context": "Building has 8 occupied units across 4 floors. Fire department is automatically notified by the alarm system. Last false alarm was 6 months ago due to a cooking incident.",
+    "expected_behaviors": [
+      "Treat as real until confirmed otherwise — don't assume false alarm",
+      "Send immediate message to ALL tenants: evacuate the building",
+      "Do NOT tell tenants to ignore it or stay put",
+      "Contact emergency services to confirm they're responding",
+      "Try to determine the source if safe to do so",
+      "Document everything in case notes — times, actions taken, outcome"
+    ],
+    "actors": {
+      "Maria Santos": "You are Maria Santos, tenant in Unit 2A. You hear the fire alarm and you're panicking because you have a baby. You'll ask if this is real or a false alarm. You need to know if you should evacuate and where to go. You're on the 2nd floor.",
+      "James Chen": "You are James Chen, tenant in Unit 2B. You smell something that might be smoke coming from the hallway but you're not sure. You'll report this when the property manager contacts you.",
+      "Sarah Johnson": "You are Sarah Johnson, tenant in Unit 3A. You're not home right now. If contacted, you'll confirm you're out of the building and ask if your apartment is okay.",
+      "Tom Anderson": "You are Tom Anderson, tenant in Unit 4B. You were cooking and accidentally burned something badly. You think you might have triggered the alarm. The situation is under control in your unit — no actual fire, just a lot of smoke from a burned pan. You'll admit this if contacted.",
+      "Emergency Services": "You are the 911 dispatcher. You confirm the fire department has been dispatched and will arrive in approximately 5 minutes. You advise everyone to evacuate and not to re-enter until the fire department clears the building.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. If contacted during a fire alarm, you want to know: is everyone safe, is there actual fire or smoke, and are the firefighters on their way. You'll ask for a full update once the situation is resolved."
+    }
+  },
+  {
+    "id": "maintenance-access",
+    "title": "Tenant refuses entry for inspection",
+    "scenario": "Annual fire safety inspection is scheduled for tomorrow. All tenants were notified 2 weeks ago. Sarah Johnson (Unit 3A) just replied saying she won't be home and doesn't want anyone in her apartment while she's away.",
+    "context": "Fire safety inspections are legally required. The lease allows landlord access with 24-hour notice for required inspections. Skipping a unit could mean failing the building's inspection.",
+    "expected_behaviors": [
+      "Acknowledge Sarah's concern about privacy",
+      "Explain that fire safety inspection is legally mandatory, not optional",
+      "Reference the lease clause and the 24-hour notice that was given",
+      "Offer to reschedule to a time when she can be present",
+      "Be firm but respectful — this is non-negotiable for safety compliance",
+      "Document the communication in case notes"
+    ],
+    "actors": {
+      "Sarah Johnson": "You are Sarah Johnson, tenant in Unit 3A. You value your privacy highly. You don't want strangers in your apartment when you're not there. If told it's legally required, you'll reluctantly agree but want to be present. You can be available the day after tomorrow in the morning. If the manager is respectful about your concerns, you'll cooperate. If they're dismissive, you'll get more resistant.",
+      "Robert Hughes": "You are Robert Hughes, the property owner. Fire safety inspections must happen — we can't fail the building inspection because of one unit. If Sarah can reschedule within the inspection window, that's fine. But it has to happen this week. The manager should handle this diplomatically."
+    }
+  }
+]

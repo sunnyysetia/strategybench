@@ -1,0 +1,21 @@
+{
+  "name": "strategybench",
+  "version": "0.1.0",
+  "description": "A self-improving agent harness. The agent can only change how it thinks.",
+  "scripts": {
+    "bench": "tsx src/runner.ts",
+    "bench:case": "tsx src/runner.ts",
+    "improve": "tsx src/improve.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.3.0",
+    "ai": "^4.3.0",
+    "dotenv": "^16.4.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
